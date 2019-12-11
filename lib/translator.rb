@@ -20,7 +20,9 @@ emoticons.each do |key,val|
 end
 
 
-def get_japanese_emoticon
+def get_japanese_emoticon(yaml_path,emoticon) 
+  array = load_library(yaml_path) 
+  
   # code goes here
 end
 
