@@ -15,11 +15,8 @@ emoticons.each do |key,val|
         new_hash[:get_meaning][japanese_key] = key
         new_hash[:get_emoticon][english_key] = key
     end
-end
-
-# emoticons[:get_meaning].merge({})
-pp new_hash
-return new_hash
+  end
+  return new_hash
 end
   
   return emoticons 
