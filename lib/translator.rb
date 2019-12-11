@@ -5,19 +5,21 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   
   
-emoticons[:get_meaning] = {}
-emoticons[:get_emoticon] = {}
+new_hash = {}
+new_hash[:get_meaning] = {}
+new_hash[:get_emoticon] = {}
 emoticons.each do |key,val|
     english_key = val[0]
     japanese_key = val[1] 
-
     if japanese_key != nil 
-        emoticons[:get_meaning][japanese_key] = key
-        emoticons[:get_emoticon][english_key] = key
+        new_hash[:get_meaning][japanese_key] = key
+        new_hash[:get_emoticon][english_key] = key
     end
+end
 
-    # emoticons[:get_value] = val 
-    
+# emoticons[:get_meaning].merge({})
+pp new_hash
+return new_hash
 end
   
   return emoticons 
