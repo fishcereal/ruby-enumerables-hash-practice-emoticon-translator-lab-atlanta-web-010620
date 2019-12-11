@@ -27,7 +27,7 @@ def get_japanese_emoticon(yaml_path,emoticon)
     if emo == emoticon 
       return value 
     end
-  
+  end
 end
 
 def get_english_meaning
