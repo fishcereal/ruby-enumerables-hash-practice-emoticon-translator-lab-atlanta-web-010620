@@ -18,9 +18,7 @@ emoticons.each do |key,val|
   end
   return new_hash
 end
-  
-  return emoticons 
-end
+
 
 def get_japanese_emoticon
   # code goes here
