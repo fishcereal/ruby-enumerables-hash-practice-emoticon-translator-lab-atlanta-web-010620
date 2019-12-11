@@ -25,10 +25,11 @@ def get_japanese_emoticon(yaml_path,emoticon)
   apology = "Sorry, that emoticon was not found"
   array[:get_emoticon].each do |emo,value|
     if emo == emoticon 
-      return value 
+      apology = value 
     end
     
   end
+  return apology
 end
 
 def get_english_meaning
