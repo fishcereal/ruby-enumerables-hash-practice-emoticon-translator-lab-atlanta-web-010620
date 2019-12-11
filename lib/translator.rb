@@ -22,11 +22,12 @@ end
 
 def get_japanese_emoticon(yaml_path,emoticon) 
   array = load_library(yaml_path) 
-  
+  apology = "Sorry, that emoticon was not found"
   array[:get_emoticon].each do |emo,value|
     if emo == emoticon 
       return value 
     end
+    
   end
 end
 
