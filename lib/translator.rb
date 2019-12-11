@@ -33,5 +33,13 @@ def get_japanese_emoticon(yaml_path,emoticon)
 end
 
 def get_english_meaning
-  # code goes here
+  array = load_library(yaml_path) 
+  statement = "Sorry, that emoticon was not found"
+  array[:get_meaning].each do |emo,value|
+    if emo == emoticon 
+      statement = value 
+    end
+    
+  end
+  return statement
 end
