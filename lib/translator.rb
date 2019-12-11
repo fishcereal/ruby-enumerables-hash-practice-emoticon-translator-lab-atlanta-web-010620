@@ -23,7 +23,8 @@ end
 def get_japanese_emoticon(yaml_path,emoticon) 
   array = load_library(yaml_path) 
   
-  # code goes here
+  array[:get_meaning]
+  
 end
 
 def get_english_meaning
