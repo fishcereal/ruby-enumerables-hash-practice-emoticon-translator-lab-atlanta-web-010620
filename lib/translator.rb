@@ -3,7 +3,6 @@ require 'yaml'
 
 def load_library(path)
   emoticons = YAML.load_file(path.to_s)
-  p emoticons
   return emoticons
 end
 
