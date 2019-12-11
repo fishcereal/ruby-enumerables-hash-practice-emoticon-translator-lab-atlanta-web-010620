@@ -32,7 +32,7 @@ def get_japanese_emoticon(yaml_path,emoticon)
   return statement
 end
 
-def get_english_meaning
+def get_english_meaning(yaml_path,emoticon)
   array = load_library(yaml_path) 
   statement = "Sorry, that emoticon was not found"
   array[:get_meaning].each do |emo,value|
