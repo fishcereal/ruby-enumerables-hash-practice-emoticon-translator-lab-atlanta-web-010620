@@ -13,7 +13,7 @@ emoticons.each do |key,val|
     japanese_key = val[1] 
     if japanese_key != nil 
         new_hash[:get_meaning][japanese_key] = key
-        new_hash[:get_emoticon][english_key] = key
+        new_hash[:get_emoticon][english_key] = japanese_key
     end
   end
   return new_hash
