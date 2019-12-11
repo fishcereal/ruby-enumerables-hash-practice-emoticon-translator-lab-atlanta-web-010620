@@ -23,7 +23,10 @@ end
 def get_japanese_emoticon(yaml_path,emoticon) 
   array = load_library(yaml_path) 
   
-  array[:get_meaning]
+  array[:get_emoticon].each do |emo,value|
+    if emo == emoticon 
+      return value 
+    end
   
 end
 
