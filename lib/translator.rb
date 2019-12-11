@@ -26,8 +26,7 @@ def get_japanese_emoticon(yaml_path,emoticon)
   array[:get_emoticon].each do |emo,value|
     if emo == emoticon 
       return value 
-    else 
-      return 'apology message'
+    
     end
   end
 end
